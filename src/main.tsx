@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import HelloWorold from "./base/HelloWorld";
 import HelloComp from "./components/HelloComp";
+import { ClockComp } from "./components/ClockComp";
 
 function tick() {
 	ReactDOM.render(
@@ -13,13 +14,14 @@ function tick() {
 			<HelloComp name="zou" />
 			<HelloComp name="lei" />
 			<HelloComp />
+			<ClockComp />
 		</React.StrictMode>,
 		document.getElementById("root")
 	);
-	render();
+	//全局60帧更新
+	// render();
 }
 function render() {
-	//60帧更新
 	requestAnimationFrame(tick);
 }
 render();

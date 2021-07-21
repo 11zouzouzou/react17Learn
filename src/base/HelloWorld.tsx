@@ -9,7 +9,7 @@ function HelloWorld() {
 		<div>
 			<h1>hello react17</h1>
       <p>表达式测试：{formatName(user)}</p>
-      <p>时间更新测试：{ new Date().toLocaleTimeString()}</p>
+      <p>全局时间更新测试：{ new Date().toLocaleTimeString()}</p>
 		</div>
 	);
   const reactCreatElement = React.createElement("div", { className: "reactCreatElement" }, "Hello reactCreateElement");
