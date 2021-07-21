@@ -6,6 +6,7 @@ import HelloWorold from "./base/HelloWorld";
 import HelloComp from "./components/HelloComp";
 import { ClockComp } from "./components/ClockComp";
 import { Toggle } from "./components/ToggleComp";
+import { ControlComp } from "./components/ControlComp";
 
 function tick() {
 	ReactDOM.render(
@@ -17,6 +18,7 @@ function tick() {
 			<HelloComp />
 			<ClockComp />
 			<Toggle />
+			<ControlComp></ControlComp>
 		</React.StrictMode>,
 		document.getElementById("root")
 	);
