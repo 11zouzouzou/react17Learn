@@ -8,6 +8,7 @@ import { ClockComp } from "./components/ClockComp";
 import { Toggle } from "./components/ToggleComp";
 import { ControlComp } from "./components/ControlComp";
 import { ListControlComp } from "./components/ListComp";
+import { NameForm } from "./components/FormComp";
 
 function tick() {
 	ReactDOM.render(
@@ -21,6 +22,7 @@ function tick() {
 			<Toggle />
 			<ControlComp></ControlComp>
 			<ListControlComp></ListControlComp>
+			<NameForm></NameForm>
 		</React.StrictMode>,
 		document.getElementById("root")
 	);
