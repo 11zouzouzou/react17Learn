@@ -10,6 +10,7 @@ import { ControlComp } from "./components/ControlComp";
 import { ListControlComp } from "./components/ListComp";
 import { NameForm } from "./components/FormComp";
 import { Calculator } from "./components/temperatureComp";
+import { SignUpDialog } from "./components/CombinationComp";
 
 function tick() {
 	ReactDOM.render(
@@ -25,6 +26,7 @@ function tick() {
 			<ListControlComp></ListControlComp>
 			<NameForm></NameForm>
 			<Calculator></Calculator>
+			<SignUpDialog></SignUpDialog>
 		</React.StrictMode>,
 		document.getElementById("root")
 	);
