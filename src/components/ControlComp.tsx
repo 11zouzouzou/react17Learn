@@ -34,7 +34,7 @@ class ControlComp extends React.Component {
         <h4>运算符&&</h4>
         <p>{isLoggedIn && <h6>{JSON.stringify(this.state)}</h6>}</p>
         <h4>三目运算符</h4>
-        <p>{isLoggedIn ? <p>{JSON.stringify(this.state)}</p> : <p>{"非" + JSON.stringify(this.state)}</p>}</p>
+        {isLoggedIn ? <p>{JSON.stringify(this.state)}</p> : <p>{"非" + JSON.stringify(this.state)}</p>}
         <h4>阻止组件渲染</h4>
         <WarningBanner warn={!isLoggedIn}></WarningBanner>
       </div>

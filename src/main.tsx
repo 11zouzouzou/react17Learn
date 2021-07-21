@@ -9,6 +9,7 @@ import { Toggle } from "./components/ToggleComp";
 import { ControlComp } from "./components/ControlComp";
 import { ListControlComp } from "./components/ListComp";
 import { NameForm } from "./components/FormComp";
+import { Calculator } from "./components/temperatureComp";
 
 function tick() {
 	ReactDOM.render(
@@ -23,6 +24,7 @@ function tick() {
 			<ControlComp></ControlComp>
 			<ListControlComp></ListControlComp>
 			<NameForm></NameForm>
+			<Calculator></Calculator>
 		</React.StrictMode>,
 		document.getElementById("root")
 	);
