@@ -15,6 +15,7 @@ import { AccessibilityControl } from "./components/advancedGuides/AccessibilityC
 import { BlurExample } from "./components/advancedGuides/BlurDemoComp";
 import { CodeSegmentDemo } from "./components/advancedGuides/CodeSegmentComp";
 import { ContextApp } from "./components/advancedGuides/context";
+import { RefsApp } from "./components/advancedGuides/refs";
 
 function tick() {
 	ReactDOM.render(
@@ -36,6 +37,7 @@ function tick() {
 			<BlurExample></BlurExample>
 			<CodeSegmentDemo></CodeSegmentDemo>
 			<ContextApp></ContextApp>
+			<RefsApp></RefsApp>
 		</React.StrictMode>,
 		document.getElementById("root")
 	);
