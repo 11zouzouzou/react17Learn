@@ -13,6 +13,7 @@ import { Calculator } from "./components/temperatureComp";
 import { SignUpDialog } from "./components/CombinationComp";
 import { AccessibilityControl } from "./components/advancedGuides/AccessibilityComp";
 import { BlurExample } from "./components/advancedGuides/BlurDemoComp";
+import { CodeSegmentDemo } from "./components/advancedGuides/CodeSegmentComp";
 
 function tick() {
 	ReactDOM.render(
@@ -32,6 +33,7 @@ function tick() {
 			{/* advanced guide */}
 			<AccessibilityControl></AccessibilityControl>
 			<BlurExample></BlurExample>
+			<CodeSegmentDemo></CodeSegmentDemo>
 		</React.StrictMode>,
 		document.getElementById("root")
 	);
