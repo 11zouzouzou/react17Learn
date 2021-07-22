@@ -16,6 +16,7 @@ import { BlurExample } from "./components/advancedGuides/BlurDemoComp";
 import { CodeSegmentDemo } from "./components/advancedGuides/CodeSegmentComp";
 import { ContextApp } from "./components/advancedGuides/context";
 import { RefsApp } from "./components/advancedGuides/refs";
+import { ControlUpdateComp } from "./components/advancedGuides/ControlUpdateComp";
 
 function tick() {
 	ReactDOM.render(
@@ -38,6 +39,7 @@ function tick() {
 			<CodeSegmentDemo></CodeSegmentDemo>
 			<ContextApp></ContextApp>
 			<RefsApp></RefsApp>
+			<ControlUpdateComp></ControlUpdateComp>
 		</React.StrictMode>,
 		document.getElementById("root")
 	);

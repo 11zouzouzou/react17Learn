@@ -6,6 +6,9 @@ function logProps(Component: any) {
       console.log("old props:", prevProps);
       console.log("new props:", this.props);
     }
+    componentDidMount() {
+      console.log('高阶挂载');
+    }
 
     render() {
       const { forwardedRef, ...rest } = this.props;
