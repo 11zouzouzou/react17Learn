@@ -11,6 +11,8 @@ import { ListControlComp } from "./components/ListComp";
 import { NameForm } from "./components/FormComp";
 import { Calculator } from "./components/temperatureComp";
 import { SignUpDialog } from "./components/CombinationComp";
+import { AccessibilityControl } from "./components/advancedGuides/AccessibilityComp";
+import { BlurExample } from "./components/advancedGuides/BlurDemoComp";
 
 function tick() {
 	ReactDOM.render(
@@ -27,6 +29,9 @@ function tick() {
 			<NameForm></NameForm>
 			<Calculator></Calculator>
 			<SignUpDialog></SignUpDialog>
+			{/* advanced guide */}
+			<AccessibilityControl></AccessibilityControl>
+			<BlurExample></BlurExample>
 		</React.StrictMode>,
 		document.getElementById("root")
 	);
