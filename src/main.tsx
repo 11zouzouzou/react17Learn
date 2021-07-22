@@ -14,6 +14,7 @@ import { SignUpDialog } from "./components/CombinationComp";
 import { AccessibilityControl } from "./components/advancedGuides/AccessibilityComp";
 import { BlurExample } from "./components/advancedGuides/BlurDemoComp";
 import { CodeSegmentDemo } from "./components/advancedGuides/CodeSegmentComp";
+import { ContextApp } from "./components/advancedGuides/context";
 
 function tick() {
 	ReactDOM.render(
@@ -34,6 +35,7 @@ function tick() {
 			<AccessibilityControl></AccessibilityControl>
 			<BlurExample></BlurExample>
 			<CodeSegmentDemo></CodeSegmentDemo>
+			<ContextApp></ContextApp>
 		</React.StrictMode>,
 		document.getElementById("root")
 	);
