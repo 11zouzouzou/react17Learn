@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Profiler } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
@@ -18,37 +18,41 @@ import { ContextApp } from "./components/advancedGuides/context";
 import { RefsApp } from "./components/advancedGuides/refs";
 import { ControlUpdateComp } from "./components/advancedGuides/ControlUpdateComp";
 import { PortalUseComp } from "./components/advancedGuides/PortalUseComp";
+import { ProfilerAPI } from "./test/Profiler";
 
 function tick() {
-	ReactDOM.render(
-		<React.StrictMode>
-			{/* <App /> */}
-			<HelloWorold />
-			<HelloComp name="zou" />
-			<HelloComp name="lei" />
-			<HelloComp />
-			<ClockComp />
-			<Toggle />
-			<ControlComp></ControlComp>
-			<ListControlComp></ListControlComp>
-			<NameForm></NameForm>
-			<Calculator></Calculator>
-			<SignUpDialog></SignUpDialog>
-			{/* advanced guide */}
-			<AccessibilityControl></AccessibilityControl>
-			<BlurExample></BlurExample>
-			<CodeSegmentDemo></CodeSegmentDemo>
-			<ContextApp></ContextApp>
-			<RefsApp></RefsApp>
-			<ControlUpdateComp></ControlUpdateComp>
-			<PortalUseComp></PortalUseComp>
-		</React.StrictMode>,
-		document.getElementById("root")
-	);
-	//全局60帧更新
-	// render();
+  ReactDOM.render(
+    <React.StrictMode>
+      {/* test */}
+      <Profiler id='main' onRender={ProfilerAPI.onRenderCallback}>
+        {/* <App /> */}
+        <HelloWorold />
+        <HelloComp name="zou" />
+        <HelloComp name="lei" />
+        <HelloComp />
+        <ClockComp />
+        <Toggle />
+        <ControlComp></ControlComp>
+        <ListControlComp></ListControlComp>
+        <NameForm></NameForm>
+        <Calculator></Calculator>
+        <SignUpDialog></SignUpDialog>
+        {/* advanced guide */}
+        <AccessibilityControl></AccessibilityControl>
+        <BlurExample></BlurExample>
+        <CodeSegmentDemo></CodeSegmentDemo>
+        <ContextApp></ContextApp>
+        <RefsApp></RefsApp>
+        <ControlUpdateComp></ControlUpdateComp>
+        <PortalUseComp></PortalUseComp>
+      </Profiler>
+    </React.StrictMode>,
+    document.getElementById("root")
+  );
+  //全局60帧更新
+  // render();
 }
 function render() {
-	requestAnimationFrame(tick);
+  requestAnimationFrame(tick);
 }
 render();
