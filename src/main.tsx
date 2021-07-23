@@ -20,6 +20,7 @@ import { ControlUpdateComp } from "./components/advancedGuides/ControlUpdateComp
 import { PortalUseComp } from "./components/advancedGuides/PortalUseComp";
 import { ProfilerAPI } from "./test/Profiler";
 import { KeyList } from "./components/advancedGuides/KeyListComp";
+import { MouseTracker } from "./components/advancedGuides/renderProps";
 
 function tick() {
   ReactDOM.render(
@@ -47,6 +48,7 @@ function tick() {
         <ControlUpdateComp></ControlUpdateComp>
 				<PortalUseComp></PortalUseComp>
 				<KeyList></KeyList>
+				<MouseTracker></MouseTracker>
       </Profiler>
     </React.StrictMode>,
     document.getElementById("root")
