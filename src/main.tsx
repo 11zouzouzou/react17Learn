@@ -19,6 +19,7 @@ import { RefsApp } from "./components/advancedGuides/refs";
 import { ControlUpdateComp } from "./components/advancedGuides/ControlUpdateComp";
 import { PortalUseComp } from "./components/advancedGuides/PortalUseComp";
 import { ProfilerAPI } from "./test/Profiler";
+import { KeyList } from "./components/advancedGuides/KeyListComp";
 
 function tick() {
   ReactDOM.render(
@@ -44,7 +45,8 @@ function tick() {
         <ContextApp></ContextApp>
         <RefsApp></RefsApp>
         <ControlUpdateComp></ControlUpdateComp>
-        <PortalUseComp></PortalUseComp>
+				<PortalUseComp></PortalUseComp>
+				<KeyList></KeyList>
       </Profiler>
     </React.StrictMode>,
     document.getElementById("root")
