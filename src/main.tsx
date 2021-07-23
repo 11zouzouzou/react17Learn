@@ -17,6 +17,7 @@ import { CodeSegmentDemo } from "./components/advancedGuides/CodeSegmentComp";
 import { ContextApp } from "./components/advancedGuides/context";
 import { RefsApp } from "./components/advancedGuides/refs";
 import { ControlUpdateComp } from "./components/advancedGuides/ControlUpdateComp";
+import { PortalUseComp } from "./components/advancedGuides/PortalUseComp";
 
 function tick() {
 	ReactDOM.render(
@@ -40,6 +41,7 @@ function tick() {
 			<ContextApp></ContextApp>
 			<RefsApp></RefsApp>
 			<ControlUpdateComp></ControlUpdateComp>
+			<PortalUseComp></PortalUseComp>
 		</React.StrictMode>,
 		document.getElementById("root")
 	);
