@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { ThemeButton } from "./ThemeButton";
+import { ThemeButton, ThemeButtonHook } from "./ThemeButton";
 import { ThemeContext, themes, UserContext } from "./themeContext";
 import { ThemeToggleButton } from "./ThemeTogglerButton";
 
@@ -38,6 +38,7 @@ class ContextApp extends React.Component {
         {/* 挂载context */}
         <ThemeContext.Provider value={{ theme: this.state.theme, toggleTheme: this.toggleTheme }}>
           <Toolbar changeTheme={this.toggleTheme}></Toolbar>
+          <ThemeButtonHook onClick={this.toggleTheme}></ThemeButtonHook>
         </ThemeContext.Provider>
         <ThemeButton onClick={this.toggleTheme}>无法改变自身</ThemeButton>
         <br></br>
