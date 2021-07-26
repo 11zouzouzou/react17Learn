@@ -22,6 +22,7 @@ import { ProfilerAPI } from "./test/Profiler";
 import { KeyList } from "./components/advancedGuides/KeyListComp";
 import { MouseTracker } from "./components/advancedGuides/renderProps";
 import { Hook } from "./components/advancedGuides/hook";
+import { TotalRouter } from "./routers";
 
 function tick() {
   ReactDOM.render(
@@ -51,6 +52,8 @@ function tick() {
 				<KeyList></KeyList>
         <MouseTracker></MouseTracker>
         <Hook></Hook>
+        {/* routers */}
+        <TotalRouter></TotalRouter>
       </Profiler>
     </React.StrictMode>,
     document.getElementById("root")
