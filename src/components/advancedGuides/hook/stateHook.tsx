@@ -16,7 +16,11 @@ function StateHook() {
       }
       console.log('clear');
     };
-  },[count]);//在count 更改时更新
+  }, [count]);//在count 更改时更新
+  //挂载多个useEffect
+  useEffect(function persistForm() {
+    console.log('useEffect 2');
+  });
   return (
     <div>
       <p>点击计数:{count}</p>
