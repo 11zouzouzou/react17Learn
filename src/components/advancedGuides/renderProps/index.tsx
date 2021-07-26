@@ -20,11 +20,13 @@ class Mouse extends React.Component<{ render: ({ x, y }: { x: number; y: number 
       x: event.pageX,
       y: event.pageY,
     });
+    // event.preventDefault();
+    // event.stopPropagation();
   }
 
   render() {
     return (
-      <div style={{ height: "100vh" }} onMouseMove={this.handleMouseMove}>
+      <div style={{ height: "400px" }} onMouseMove={this.handleMouseMove}>
         {/*
           使用 `render`prop 动态决定要渲染的内容，
           而不是给出一个 <Mouse> 渲染结果的静态表示
