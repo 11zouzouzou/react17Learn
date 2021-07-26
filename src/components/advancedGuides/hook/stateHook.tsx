@@ -14,12 +14,12 @@ function StateHook() {
       if (button) {
         button.textContent = "clear";
       }
-      console.log('clear');
+      console.log("clear");
     };
-  }, [count]);//在count 更改时更新
+  }, [count]); //在count 更改时更新
   //挂载多个useEffect
   useEffect(function persistForm() {
-    console.log('useEffect 2');
+    console.log("useEffect 2");
   });
   return (
     <div>
@@ -31,6 +31,16 @@ function StateHook() {
         }}
       >
         staticHookButton
+      </button>
+      <button
+        id="clickHook"
+        onClick={() => {
+          setCount((preCount) => {
+            return preCount + 1;
+          });
+        }}
+      >
+        staticHookButton函数式更新
       </button>
       <p>水果:{fruit}</p>
       <button
@@ -56,8 +66,8 @@ function StateHook() {
 function useSelfHook() {
   const [count, setCount] = useState(0);
   useEffect(() => {
-    console.log('Todo');
-  })
+    console.log("Todo");
+  });
   return count;
 }
 
