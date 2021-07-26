@@ -52,4 +52,13 @@ function StateHook() {
   );
 }
 
+//自定义Hook,调用相同不会共享
+function useSelfHook() {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    console.log('Todo');
+  })
+  return count;
+}
+
 export { StateHook };
