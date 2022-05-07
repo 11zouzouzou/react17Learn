@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import  ReactDOM from 'react-dom'
 import logo from './logo.svg'
 import './App.css'
 
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p> Vite + React!</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
@@ -41,5 +42,7 @@ function App() {
     </div>
   )
 }
+
+ReactDOM.render(<App/>, document.getElementById("root"));
 
 export default App

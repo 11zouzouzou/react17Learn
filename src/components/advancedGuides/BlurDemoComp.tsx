@@ -1,6 +1,6 @@
 import React from "react";
 class BlurExample extends React.Component {
-  timeOutId: number | undefined;
+  timeOutId: number | any;
   state: { isOpen: boolean };
   constructor(props?: any) {
     super(props);
